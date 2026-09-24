@@ -6,4 +6,8 @@ def test_login_standarduser(startsaucedemo):
     login = Login(startsaucedemo)
     login.standarduserlogin()
 
+def test_login_visualuser(startsaucedemo):
+    login = Login(startsaucedemo)
+    login.visualuserlogin()
+
    

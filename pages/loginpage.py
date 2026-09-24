@@ -11,6 +11,9 @@ class Login:
     def enterusername(self):
         self._enterusername.fill("standard_user")
 
+    def entervisualusername(self):
+        self._enterusername.fill("visual_user")    
+
     def enterpassword(self):
         self._enterpasword.fill("secret_sauce")
 
@@ -20,7 +23,13 @@ class Login:
     def standarduserlogin(self):
         self.enterusername()
         self.enterpassword()
-        self.clickloginbutton()            
+        self.clickloginbutton()
+
+    def visualuserlogin(self):
+        self.entervisualusername()
+        self.enterpassword()
+        self.clickloginbutton()
+
 
         
         
