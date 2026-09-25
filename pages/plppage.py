@@ -27,6 +27,7 @@ class PLP:
         self._minicarticon.click()            
 
     def addtocart(self):
+        self.plptitlevalidation()
         self.productadd()
         self.productaddedvalidation()
 
