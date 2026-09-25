@@ -4,8 +4,8 @@ from playwright.sync_api import Browser
 class PLP:
     def __init__(self,page:Page):
         self._pagetitle = page.locator('[data-test="title"]').filter(has_text="Products")
-        self._addtocart = page.locator("#add-to-cart-sauce-labs-bike-light").nth(0)
-        self._removecart = page.locator("#remove-sauce-labs-bike-light").nth(0)
+        self._addtocart = page.get_by_role("button", name="Add to cart").nth(0)
+        self._removecart = page.get_by_role("button", name="Remove").nth(0)
         self._minicarticon = page.locator(".shopping_cart_badge")
 
     def plptitlevalidation(self):
@@ -33,6 +33,7 @@ class PLP:
     def removetocart(self):
         self.productremove()
         self.productremovedvalidation()
+        
 
 
 
