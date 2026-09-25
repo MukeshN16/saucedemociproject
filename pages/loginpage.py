@@ -18,7 +18,7 @@ class Login:
         self._enterpasword.fill("secret_sauce")
 
     def clickloginbutton(self):
-        self._clickloginbutton.click
+        self._clickloginbutton.click()
 
     def standarduserlogin(self):
         self.enterusername()
