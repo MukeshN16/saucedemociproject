@@ -15,4 +15,3 @@ def test_checkout(startsaucedemo):
     cart.checkout()
     checkoutinfo = Checkoutinformation(startsaucedemo)
     checkoutinfo.entercheckoutinformation()
-    checkoutinfo.clickcontinue()
