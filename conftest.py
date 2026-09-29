@@ -6,4 +6,5 @@ def startsaucedemo(browser:Browser):
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://www.saucedemo.com")
-    yield page 
+    yield page
+    context.close() 

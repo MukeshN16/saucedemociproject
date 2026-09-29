@@ -30,6 +30,9 @@ class Checkoutreview:
     def finaltotalcheck(self):
         assert self._finaltotalcheck.inner_text().startswith("Total:")
 
+    def finishcta(self):
+        self._finishCTAcheck.click()    
+
     def checkoutreview(self):
         self.quantityavailable()
         self.descriptioncheck()
@@ -37,6 +40,7 @@ class Checkoutreview:
         self.shippinginformationcheck()
         self.totalpricecheck()
         self.finaltotalcheck()
+        self.finishcta()
 
 
 
